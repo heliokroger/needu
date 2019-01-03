@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic|Roboto+Mono:400,500|Material+Icons');
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
+html, body, #root {
+    overflow: hidden;
+    height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6, p, span, label {
+    margin: 0;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    font-size: 35px;
+    font-weight: 500;
+}
+
+button, input {
+    outline: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+h2 {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+h3 {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+label {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+p, a {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+a {
+    color: #61bcaa;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+small {
+    font-size: 13px;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+}
+
+.pac-container {
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.pac-item {
+    font-family: 'Roboto', sans-serif;
+    padding: 5px;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.pac-item:hover {
+    background-color: rgba(0, 0, 0, 0.05) !important;
+}
+
+.pac-item, .pac-item-query {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.material-icons {
+    cursor: default;
+    user-select: none;
+}
