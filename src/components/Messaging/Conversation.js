@@ -43,6 +43,7 @@ class Conversation extends Component {
             conversation.messages.push(message)
             this.setState({ conversation: conversation })
             this.props.updateConversationLastMessage(message)
+            const scroll = ReactDOM.findDOMNode(this.refs.scroll)
             scroll.scrollTop = scroll.scrollHeight
         })
     }
